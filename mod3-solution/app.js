@@ -42,8 +42,10 @@ function NarrowItDownController(MenuSearchService) {
 				var items = response.data.menu_items;
 				var filteredItems = [];
 
+				nidc.searchTerm = nidc.searchTerm.toLowerCase();
+
 				items.forEach(item => {
-					if(item.description.find(nidc.searchTerm) !== -1){
+					if(item.description.toLowerCase().indexOf(nidc.searchTerm) !== -1){
 						filteredItems.push(item);
 					}
 				});
