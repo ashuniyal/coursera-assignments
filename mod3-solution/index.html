@@ -23,7 +23,7 @@
 
     <!-- found-items should be implemented as a component -->
     <found-items  f-items="nidc.found" on-remove="nidc.onRemove(index)">
-      <div class="result">{{nidc.noResponse}}</div>
+      <div class="result" ng-if="!nidc.found.length">{{nidc.noResponse}}</div>
     </found-items>
   </div>
 
