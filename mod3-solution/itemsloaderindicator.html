@@ -1,0 +1,46 @@
+<div class="table-wrapper">
+	<span class="result">RESULT</span>
+	<div class="box">
+		<table class="f1-table">
+			<thead>
+				<tr>
+					<th>
+						S.No
+					</th>
+					<th>
+						Name
+					</th>
+					<th>
+						Short-Name
+					</th>
+					<th>
+						Description
+					</th>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+			<tr ng-repeat="item in menu.fItems" class="trow">
+				<td>
+					{{$index}}
+				</td>
+				<td>
+					{{item.name}}
+				</td>
+				<td>
+					{{item.short_name}}
+				</td>
+				<td>
+					{{item.description}}
+				</td>
+				<td>
+					<button class="btn btn-primary" ng-click="menu.onRemove({index: $index})">
+						Don't want this one!
+					</button>
+				</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+	<div ng-transclude></div>
+</div>
