@@ -50,7 +50,9 @@ function NarrowItDownController(MenuSearchService) {
 					}
 				});
 				nidc.found = filteredItems;
-
+				if(filteredItems.length == 0){
+					nidc.noResponse = "Nothing Found";
+				}
 			}).catch(function (response) {
 				nidc.noResponse = "Nothing Found";
 			});
