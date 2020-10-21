@@ -14,11 +14,11 @@ function RoutesConfig($stateProvider, $urlRouterProvider, $qProvider){
 	$stateProvider
 	.state('home',{
 		url: "/",
-		templateUrl: "home.html",
+		templateUrl: "../template/home.html",
 	})
 	.state('categories',{
 		url: "/categories",
-		templateUrl: "routes-categories.html",
+		templateUrl: "../template/routes-categories.html",
 		controller: "CategoryRouter as cat",
 		resolve: {
 			menus: ['MenuDataService', function (MenuDataService) {
@@ -28,7 +28,7 @@ function RoutesConfig($stateProvider, $urlRouterProvider, $qProvider){
 	})
 	.state('categories.itemDetail',{
 		url: "/item-detail/{param}",
-		templateUrl: "routes-items.html",
+		templateUrl: "../template/routes-items.html",
 		controller: "ItemRouter as iter",
 		resolve: {
 			items: ['$stateParams', 'MenuDataService', function ($stateParams, MenuDataService) {
