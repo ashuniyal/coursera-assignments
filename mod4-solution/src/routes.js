@@ -5,8 +5,8 @@ angular.module('MenuApp')
 
 RoutesConfig.$inject = ['$stateProvider','$urlRouterProvider','$qProvider'];
 function RoutesConfig($stateProvider, $urlRouterProvider, $qProvider){
-	$qProvider
-	.errorOnUnhandledRejections(false);
+	//$qProvider
+	//.errorOnUnhandledRejections(false);
 
 	$urlRouterProvider
 	.otherwise("/");
