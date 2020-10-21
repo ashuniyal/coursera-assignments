@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="MenuApp">
 <head>
+	<link rel="stylesheet" href="styles.css">
 	<script src="lib/angular.min.js" ></script>
 	<script src="lib/angular-ui-router.min.js" ></script>
-	<script src="src/menuapp.module.js" ></script>
 	<script src="src/data.module.js" ></script>
 	<script src="services/menudata.service.js" ></script>
+	<script src="src/menuapp.module.js" ></script>
+	<script src="src/routes.js" ></script>
 	<script src="components/categories.component.js" ></script>
 	<script src="components/items.component.js" ></script>
-	<script src="src/routes.js" ></script>
+	<script src="Controllers/CategoriesController.js"></script>
+	<script src="Controllers/ItemsController.js"></script>
 	<title>Restaurant</title>
 </head>
-<body ng-app="">
-
+<body>
+<div>
+	<ui-view></ui-view>
+</div>
 </body>
 </html>
