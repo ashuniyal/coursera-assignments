@@ -2,7 +2,7 @@
 
 angular.module('MenuApp')
 .component('itemsComponent', {
-	templateUrl: "../items.html",
+	templateUrl: "../template/items.html",
 	bindings: {
 		items: '<'
 	}
