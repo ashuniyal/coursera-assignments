@@ -18,7 +18,7 @@ function RoutesConfig($stateProvider, $urlRouterProvider, $qProvider){
 	})
 	.state('categories',{
 		url: "/categories",
-		templateUrl: "./template/routes-categories.html",
+		templateUrl: "./templates/routes-categories.html",
 		controller: "CategoryRouter as cat",
 		resolve: {
 			menus: ['MenuDataService', function (MenuDataService) {
