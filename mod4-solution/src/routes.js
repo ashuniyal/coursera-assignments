@@ -18,7 +18,7 @@ function RoutesConfig($stateProvider, $urlRouterProvider, $qProvider){
 	})
 	.state('categories',{
 		url: "/categories",
-		templateUrl: "./templates/routes-categories.html",
+		templateUrl: "/mod4-solution/template/routes-categories.html",
 		controller: "CategoryRouter as cat",
 		resolve: {
 			menus: ['MenuDataService', function (MenuDataService) {
@@ -28,7 +28,7 @@ function RoutesConfig($stateProvider, $urlRouterProvider, $qProvider){
 	})
 	.state('categories.itemDetail',{
 		url: "/item-detail/{param}",
-		templateUrl: "../mod4-solution/template/routes-items.html",
+		templateUrl: "/mod4-solution/template/routes-items.html",
 		controller: "ItemRouter as iter",
 		resolve: {
 			items: ['$stateParams', 'MenuDataService', function ($stateParams, MenuDataService) {
