@@ -14,11 +14,11 @@ function RoutesConfig($stateProvider, $urlRouterProvider, $qProvider){
 	$stateProvider
 	.state('home',{
 		url: "/",
-		templateUrl: "../mod4-solution/template/home.html",
+		templateUrl: "/mod4-solution/template/home.html",
 	})
 	.state('categories',{
 		url: "/categories",
-		templateUrl: "../mod4-solution/template/routes-categories.html",
+		templateUrl: "./template/routes-categories.html",
 		controller: "CategoryRouter as cat",
 		resolve: {
 			menus: ['MenuDataService', function (MenuDataService) {
