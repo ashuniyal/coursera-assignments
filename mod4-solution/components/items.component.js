@@ -2,7 +2,7 @@
 
 angular.module('MenuApp')
 .component('itemsComponent', {
-	templateUrl: "../template/items.html",
+	templateUrl: "mod4-solution/template/items.html",
 	bindings: {
 		items: '<'
 	}
