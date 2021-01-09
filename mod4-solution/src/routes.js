@@ -14,7 +14,7 @@ function RoutesConfig($stateProvider, $urlRouterProvider, $qProvider){
 	$stateProvider
 	.state('home',{
 		url: "/",
-		templateUrl: "/coursera-assignments/coursera-assignments/mod4-solution/template/home.html",
+		templateUrl: "/coursera-assignments/mod4-solution/template/home.html",
 	})
 	.state('categories',{
 		url: "/categories",
