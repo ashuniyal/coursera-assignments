@@ -12,6 +12,7 @@ function MyInfoControllerFunction(user, MenuService) {
   myinfoctrl.isRegistered = false;
   if(Object.keys(user).length == 0){
     myinfoctrl.isRegistered = false;
+    return;
   }
   MenuService.isMenuItemPresent(user.shortname).then(function (response) {
     myinfoctrl.item = response.data;
