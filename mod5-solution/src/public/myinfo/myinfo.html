@@ -1,0 +1,22 @@
+<div class="container">
+  <span ng-if="!myinfoctrl.isRegistered">
+    Not Signed Up Yet.<a ui-sref="public.signup">Sign up Now!</a>
+  </span>
+  <div ng-if="myinfoctrl.isRegistered" style="text-align: left; font-size: 20px">
+    <h2 id="menu-categories-title" class="text-center">
+      <u>Registered Information</u>
+    </h2>
+    <span>First Name :  {{myinfoctrl.user.firstname}}</span>
+    <br>
+    <span>Last Name :  {{myinfoctrl.user.lastname}}</span>
+    <br>
+    <span>Email Id :  {{myinfoctrl.user.email}}</span>
+    <br>
+    <span>Phone Number :  {{myinfoctrl.user.phone}}</span>
+    <br>
+    <span><u>Favourite Dish</u></span>
+    <br>
+    <menu-item menu-item="myinfoctrl.item">
+    </menu-item>
+  </div>
+</div>
