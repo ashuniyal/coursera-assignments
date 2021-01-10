@@ -28,7 +28,7 @@ function MenuService($http, ApiPath) {
   };
 
   service.isMenuItemPresent = function (shortName){
-    return $http.get(ApiPath + '/menu_items/' + shortName.toUpperCase() + '.json');
+    return $http.get(ApiPath + '/menu_items/' + shortName + '.json');
   };
 
 }

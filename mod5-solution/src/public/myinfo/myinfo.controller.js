@@ -14,9 +14,11 @@ function MyInfoControllerFunction(user, MenuService) {
     myinfoctrl.isRegistered = false;
     return;
   }
-  MenuService.isMenuItemPresent(user.shortname).then(function (response) {
-    myinfoctrl.item = response.data;
-  });
+  if(user.shortname != ""){
+    MenuService.isMenuItemPresent(user.shortname.toUpperCase()).then(function (response) {
+      myinfoctrl.item = response.data;
+    });
+}
 
 }
 
