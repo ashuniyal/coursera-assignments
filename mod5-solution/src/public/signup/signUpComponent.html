@@ -44,7 +44,7 @@
       <br>
       <input type="text" name="shortname" placeholder="Short name of your favourite dish."
               ng-model="$ctrl.shortname"
-              ng-blur="$ctrl.check()">
+              ng-change="$ctrl.check()">
       <br>
       <span ng-if="!$ctrl.isPresent && signform.shortname.$touched">
         No such menu number exists.
