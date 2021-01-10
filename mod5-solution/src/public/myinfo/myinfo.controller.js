@@ -9,7 +9,7 @@ MyInfoControllerFunction.$inject = ['user','MenuService'];
 function MyInfoControllerFunction(user, MenuService) {
   var myinfoctrl = this;
   myinfoctrl.user = user;
-  myinfoctrl.isRegistered = true;
+  myinfoctrl.isRegistered = false;
   if(Object.keys(user).length == 0){
     myinfoctrl.isRegistered = false;
   }
